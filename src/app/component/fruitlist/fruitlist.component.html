@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Fruit List</h1>
+    <input #fruitlist placeholder="Enter a fruit name: ">
+    <button (click)="addfruitlist(fruitlist.value); fruitlist.value=''">Add fruit to the list</button>
+  
+    <ul>
+      <li *ngFor="let fruitlist of Fruitlist; let i = index">
+        {{ fruitlist }}
+        <button (click)="removeFruitlist(i)">Remove</button>
+      </li>
+    </ul>
+  </div>
+  

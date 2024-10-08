@@ -10,7 +10,7 @@ import { CitylistComponent } from './component/citylist/citylist.component';
 import { MovielistComponent } from './component/movielist/movielist.component';
 import { ProductlistComponent } from './component/productlist/productlist.component';
 import { CarlistComponent } from './component/carlist/carlist.component';
-
+import { SubjectlistComponent } from './component/subjectlist/subjectlist.component';
 
 
 const routes: Routes = [
@@ -23,7 +23,8 @@ const routes: Routes = [
   {path: 'citylist', component:CitylistComponent},
   {path: 'movielist', component:MovielistComponent},
   {path: 'productlist', component:ProductlistComponent},
-  {path: 'carlist', component:CarlistComponent}
+  {path: 'carlist', component:CarlistComponent},
+  {path: 'subjectlist', component:SubjectlistComponent}
 
 
 

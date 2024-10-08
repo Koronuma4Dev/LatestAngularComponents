@@ -1,0 +1,14 @@
+<h1>Subject list in my 1st sem</h1>
+<div class="input-container">
+    <input type="text" #subjectInput placeholder="Enter new Subject">
+
+    <button (click)="addSubject(subjectInput)">Add new subject</button>
+</div>
+
+<ul>
+    <li *ngFor="let subject of subjectlist; let i = index">
+{{ subject }}
+
+<button (click)="removeSubject(i)">Remove</button>
+    </li>
+</ul>

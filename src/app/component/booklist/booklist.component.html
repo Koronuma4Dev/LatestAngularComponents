@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 class="heading">Book list</h1>
+
+    <input type="text" #booklistInput placeholder="Name: ">
+
+    <button (click)="addBooklist(booklistInput)">Add a new book to read</button>
+</div>
+
+<ul>
+    <li *ngFor="let booklist of booklist; let i = index">
+      {{ booklist}}
+      <button (click)="removeBooklist(i)">Remove</button>
+    </li>
+  </ul>

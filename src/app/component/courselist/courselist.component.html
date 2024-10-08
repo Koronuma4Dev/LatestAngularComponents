@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Course List</h1>
+    
+    <div class="input-container">
+      <input type="text" #courseInput placeholder="Add a course" />
+      <button (click)="addCourse(courseInput)">Add input</button>
+    </div>
+  
+    <ul>
+      <li *ngFor="let course of courseList; let i = index">
+        {{ course }}
+        <button (click)="removeCourse(i)">Remove</button>
+      </li>
+    </ul>
+  </div>

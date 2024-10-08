@@ -10,6 +10,7 @@ import { EmployeelistComponent } from './component/employeelist/employeelist.com
 import { CourselistComponent } from './component/courselist/courselist.component';
 import { BooklistComponent } from './component/booklist/booklist.component';
 import { CitylistComponent } from './component/citylist/citylist.component';
+import { MovielistComponent } from './component/movielist/movielist.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CitylistComponent } from './component/citylist/citylist.component';
     EmployeelistComponent,
     CourselistComponent,
     BooklistComponent,
-    CitylistComponent
+    CitylistComponent,
+    MovielistComponent
   ],
   imports: [
     BrowserModule,

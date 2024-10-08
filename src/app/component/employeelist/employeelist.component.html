@@ -1,0 +1,14 @@
+<div>
+    <h2>Employee Manager</h2>
+    <input #employeeInput placeholder="Enter employee name" />
+    <button (click)="addEmployee(employeeInput.value); employeeInput.value=''">Add Employee</button>
+
+    <ul>
+        <li *ngFor="let employee of employees; let i = index">
+            {{ employee }}
+            <button (click)="removeEmployee(i)">Remove</button>
+        </li>
+    </ul>
+</div>
+
+

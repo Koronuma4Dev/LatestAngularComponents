@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavigateComponent } from './component/navigate/navigate.component';
 import { StudentlistComponent } from './component/studentlist/studentlist.component';
 import { FruitlistComponent } from './component/fruitlist/fruitlist.component';
+import { EmployeelistComponent } from './component/employeelist/employeelist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigateComponent,
     StudentlistComponent,
-    FruitlistComponent
+    FruitlistComponent,
+    EmployeelistComponent
   ],
   imports: [
     BrowserModule,

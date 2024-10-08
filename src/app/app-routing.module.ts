@@ -8,8 +8,8 @@ import { CourselistComponent } from './component/courselist/courselist.component
 import { BooklistComponent } from './component/booklist/booklist.component';
 import { CitylistComponent } from './component/citylist/citylist.component';
 import { MovielistComponent } from './component/movielist/movielist.component';
-
-
+import { ProductlistComponent } from './component/productlist/productlist.component';
+import { CarlistComponent } from './component/carlist/carlist.component';
 
 
 
@@ -22,6 +22,9 @@ const routes: Routes = [
   {path: 'booklist', component:BooklistComponent},
   {path: 'citylist', component:CitylistComponent},
   {path: 'movielist', component:MovielistComponent},
+  {path: 'productlist', component:ProductlistComponent},
+  {path: 'carlist', component:CarlistComponent}
+
 
 
 

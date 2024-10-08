@@ -12,21 +12,29 @@ import { BooklistComponent } from './component/booklist/booklist.component';
 import { CitylistComponent } from './component/citylist/citylist.component';
 import { MovielistComponent } from './component/movielist/movielist.component';
 
+import { ProductlistComponent } from './component/productlist/productlist.component';
+import { CarlistComponent } from './component/carlist/carlist.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavigateComponent,
+ 
     StudentlistComponent,
     FruitlistComponent,
     EmployeelistComponent,
     CourselistComponent,
     BooklistComponent,
     CitylistComponent,
-    MovielistComponent
+    MovielistComponent,
+
+    ProductlistComponent,
+      CarlistComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [
     provideClientHydration()

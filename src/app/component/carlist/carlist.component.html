@@ -1,0 +1,12 @@
+<h3>Add Car Model</h3>
+<input #carModelName placeholder="Car Model Name" />
+<input #carModelYear type="number" placeholder="Car Model Year" />
+<button (click)="addCarModel(carModelName, carModelYear); carModelName.value=''; carModelYear.value=''">Add Car Model</button>
+
+<ul>
+  <li *ngFor="let carModel of carModels">
+    <h3>{{ carModel.name }}</h3>
+    <p>Year: {{ carModel.year }}</p>
+    <button (click)="removeCarModel(carModel.id)">Remove</button>
+  </li>
+</ul>

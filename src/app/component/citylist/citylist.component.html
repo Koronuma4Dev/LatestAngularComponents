@@ -1,0 +1,13 @@
+<div class="container">
+    <h1 class="heading">City List</h1>
+    <input type="text" #citylistInput placeholder="Enter a new city">
+    <button (click)="addCity(citylistInput.value)">Enter data</button>
+  </div>
+  
+  <ul>
+    <li *ngFor="let city of cityList; let i = index">
+      {{ city }}
+      <button (click)="removeCity(i)">Remove</button>
+    </li>
+  </ul>
+  

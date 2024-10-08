@@ -6,6 +6,12 @@ import { FruitlistComponent } from './component/fruitlist/fruitlist.component';
 import { EmployeelistComponent } from './component/employeelist/employeelist.component';
 import { CourselistComponent } from './component/courselist/courselist.component';
 import { BooklistComponent } from './component/booklist/booklist.component';
+import { CitylistComponent } from './component/citylist/citylist.component';
+
+
+
+
+
 
 const routes: Routes = [
   {path: '', component: NavigateComponent},
@@ -14,6 +20,7 @@ const routes: Routes = [
   {path: 'employeelist', component:EmployeelistComponent},
   {path: 'courselist', component:CourselistComponent},
   {path: 'booklist', component:BooklistComponent},
+  {path: 'citylist', component:CitylistComponent},
 ];
 
 @NgModule({

@@ -16,6 +16,7 @@ import { ProductlistComponent } from './component/productlist/productlist.compon
 import { CarlistComponent } from './component/carlist/carlist.component';
 import { SubjectlistComponent } from './component/subjectlist/subjectlist.component';
 import { SportlistComponent } from './component/sportlist/sportlist.component';
+import { VegetableslistComponent } from './component/vegetableslist/vegetableslist.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SportlistComponent } from './component/sportlist/sportlist.component';
     ProductlistComponent,
       CarlistComponent,
       SubjectlistComponent,
-      SportlistComponent
+      SportlistComponent,
+      VegetableslistComponent
   ],
   imports: [
     BrowserModule,

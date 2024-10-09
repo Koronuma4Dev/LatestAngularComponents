@@ -12,6 +12,11 @@ import { ProductlistComponent } from './component/productlist/productlist.compon
 import { CarlistComponent } from './component/carlist/carlist.component';
 import { SubjectlistComponent } from './component/subjectlist/subjectlist.component';
 import { SportlistComponent } from './component/sportlist/sportlist.component';
+import { VegetableslistComponent } from './component/vegetableslist/vegetableslist.component';
+
+
+
+
 
 const routes: Routes = [
   {path: '', component: NavigateComponent},
@@ -26,6 +31,7 @@ const routes: Routes = [
   {path: 'carlist', component:CarlistComponent},
   {path: 'subjectlist', component:SubjectlistComponent},
   {path: 'sportlist', component:SportlistComponent},
+  {path: 'vegetableslist', component:VegetableslistComponent},
 
 
 

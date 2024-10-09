@@ -1,0 +1,15 @@
+<h2>Product that available for this Inventory</h2>
+
+<div class="Input-container">
+    <input type="text" #inventoryInput placeholder="Add new item">
+
+    <button (click)="addInventory(inventoryInput)">Add product</button>
+</div>
+
+<ul>
+    <li *ngFor="let inventory of inventorylist; let i -index">
+          {{ inventory }}
+
+          <button (click)="removeInventory">Delete</button>
+    </li>
+</ul>

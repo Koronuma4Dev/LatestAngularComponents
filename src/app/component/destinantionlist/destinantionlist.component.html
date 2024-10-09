@@ -1,0 +1,17 @@
+
+<h1>List of travel Destination</h1>
+<div class="Input-container">
+    <input type="text" #destinationInput placeholder="Add a new list of destination">
+
+    <button (click)="addDestination">Add</button>
+</div>
+
+<ul>
+    <li *ngFor="let destination of destinantionlist; let i = index">
+
+        {{ destination }}
+
+        <button (click)="removeDestination(i)">Delete</button>
+
+    </li>
+</ul>

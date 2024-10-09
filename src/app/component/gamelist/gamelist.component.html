@@ -1,0 +1,13 @@
+<h2>Game list</h2>
+<div class="Input-container">
+    <input type="text" #gameInput placeholder="Enter a new game that you liked">
+
+    <button (click)="addGame(gameInput)">Add new game</button>
+</div>
+<ul>
+    <li *ngFor="let game of gamelist; let i = index">
+  {{ game }}
+
+  <button (click)="removeGame(i)">remove</button>
+    </li>
+</ul>

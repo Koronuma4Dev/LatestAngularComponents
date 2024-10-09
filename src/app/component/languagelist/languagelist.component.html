@@ -1,0 +1,16 @@
+
+<h2>Programming language list</h2>
+
+<div class="Input-container">
+    <input type="text" #languageInput placeholder="Add a new Programming language ">
+
+    <button (click)="addLanguage(languageInput)">Add</button>
+</div>
+
+<ul>
+    <li *ngFor="let language of languagelist; let i =index">
+       {{ language }}
+
+       <button (click)="removeLanguage(i)">remove</button>
+    </li>
+</ul>

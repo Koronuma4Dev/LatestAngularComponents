@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigateComponent } from './component/navigate/navigate.component';
@@ -19,6 +19,8 @@ import { SportlistComponent } from './component/sportlist/sportlist.component';
 import { VegetableslistComponent } from './component/vegetableslist/vegetableslist.component';
 import { AnimallistComponent } from './component/animallist/animallist.component';
 import { ToollistComponent } from './component/toollist/toollist.component';
+import { LanguagelistComponent } from './component/languagelist/languagelist.component';
+import { CountrylistComponent } from './component/countrylist/countrylist.component';
 
 @NgModule({
   declarations: [
@@ -39,11 +41,14 @@ import { ToollistComponent } from './component/toollist/toollist.component';
       SportlistComponent,
       VegetableslistComponent,
       AnimallistComponent,
-      ToollistComponent
+      ToollistComponent,
+      LanguagelistComponent,
+      CountrylistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonModule
 
   ],
   providers: [

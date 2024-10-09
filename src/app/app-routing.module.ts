@@ -15,6 +15,11 @@ import { SportlistComponent } from './component/sportlist/sportlist.component';
 import { VegetableslistComponent } from './component/vegetableslist/vegetableslist.component';
 import { AnimallistComponent } from './component/animallist/animallist.component';
 import { ToollistComponent } from './component/toollist/toollist.component';
+import { LanguagelistComponent } from './component/languagelist/languagelist.component';
+import { CountrylistComponent } from './component/countrylist/countrylist.component';
+
+
+
 
 
 
@@ -34,6 +39,9 @@ const routes: Routes = [
   {path: 'vegetableslist', component:VegetableslistComponent},
   {path: 'animallist', component:AnimallistComponent},
   {path: 'toollist', component:ToollistComponent},
+  {path: 'languagelist', component:LanguagelistComponent},
+  {path: 'countrylist', component:CountrylistComponent},
+
 
 
 

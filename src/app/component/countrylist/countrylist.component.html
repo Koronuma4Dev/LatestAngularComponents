@@ -1,0 +1,29 @@
+<div class="country-list">
+    <h2>Countries</h2>
+    <ul>
+      <li *ngFor="let country of countries">
+        {{ country.name }} ({{ country.continent }})
+      </li>
+    </ul>
+  </div>
+  
+  <div class="add-country-form">
+    <h2>Add Country</h2>
+    <form>
+      <label for="country-name">Country Name:</label>
+      <input type="text" id="country-name" #countryName />
+      <br />
+      <label for="continent">Continent:</label>
+      <select id="continent" #continent>
+        <option value="Africa">Africa</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="North America">North America</option>
+        <option value="South America">South America</option>
+        <option value="Australia/Oceania">Australia/Oceania</option>
+        <option value="Antarctica">Antarctica</option>
+      </select>
+      <br />
+      <button type="submit" (click)="addCountry(countryName, continent)">Add Country</button>
+    </form>
+  </div>

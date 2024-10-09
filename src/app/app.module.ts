@@ -28,6 +28,8 @@ import { MusiclistComponent } from './component/musiclist/musiclist.component';
 import { GrocerylistComponent } from './component/grocerylist/grocerylist.component';
 import { ClassroomlistComponent } from './component/classroomlist/classroomlist.component';
 import { InventorylistComponent } from './component/inventorylist/inventorylist.component';
+import { LecturelistComponent } from './component/lecturelist/lecturelist.component';
+import { StationarylistComponent } from './component/stationarylist/stationarylist.component';
 
 
 @NgModule({
@@ -59,6 +61,8 @@ import { InventorylistComponent } from './component/inventorylist/inventorylist.
       GrocerylistComponent,
       ClassroomlistComponent,
       InventorylistComponent,
+      LecturelistComponent,
+      StationarylistComponent,
 
   ],
   imports: [

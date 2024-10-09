@@ -24,8 +24,8 @@ import { MusiclistComponent } from './component/musiclist/musiclist.component';
 import { GrocerylistComponent } from './component/grocerylist/grocerylist.component';
 import { ClassroomlistComponent } from './component/classroomlist/classroomlist.component';
 import { InventorylistComponent } from './component/inventorylist/inventorylist.component';
-
-
+import { LecturelistComponent } from './component/lecturelist/lecturelist.component';
+import { StationarylistComponent } from './component/stationarylist/stationarylist.component';
 
 
 
@@ -57,6 +57,9 @@ const routes: Routes = [
   {path: 'grocerylist', component:GrocerylistComponent},
   {path: 'classroomlist', component:ClassroomlistComponent},
   {path: 'inventorylist', component:InventorylistComponent},
+  {path: 'lecturelist', component:LecturelistComponent},
+  {path: 'stationarylist', component:StationarylistComponent},
+
 
 
 

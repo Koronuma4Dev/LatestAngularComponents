@@ -1,0 +1,15 @@
+<h1>Stationary section in the office</h1>
+
+<div class="Input-container">
+    <input type="text" #stationaryInput placeholder="Add new item">
+
+    <button (click)="addStationary">Add item</button>
+</div>
+
+<ul>
+    <li *ngFor="let stationary of stationarylist; let i = index">
+  {{ stationary }}
+
+  <button (click)="removeStationary(i)">Delete</button>
+    </li>
+</ul>

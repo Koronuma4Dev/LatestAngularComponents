@@ -1,0 +1,15 @@
+<h2>Lecture list in my library</h2>
+
+<div class="Input-container">
+    <input type="text" #lectureInput placeholder="Add a new lecture">
+
+    <button (click)="addLecture(lectureInput)">Add new lecture</button>
+</div>
+
+<ul>
+    <li *ngFor="let lecture of  lecturelist; let i = index">
+     {{ lecture }}
+
+     <button (click)="removeLecture(i)">Delete</button>
+    </li>
+</ul>

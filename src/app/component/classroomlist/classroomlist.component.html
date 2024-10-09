@@ -1,0 +1,15 @@
+<h2>Student enrolled in the Classroom</h2>
+
+<div class="Input-container">
+    <input type="text" #classroomInput placeholder="Add new student">
+
+    <button (click)="addClassroom(classroomInput)">Add in this classroom</button>
+</div>
+
+<ul>
+    <li *ngFor="let classroom of classroomlist; let i = index">
+   {{ classroom }}
+
+   <button (click)="removeClassroom">Delete</button>
+    </li>
+</ul>

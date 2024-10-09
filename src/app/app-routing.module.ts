@@ -18,7 +18,7 @@ import { ToollistComponent } from './component/toollist/toollist.component';
 import { LanguagelistComponent } from './component/languagelist/languagelist.component';
 import { CountrylistComponent } from './component/countrylist/countrylist.component';
 import { GamelistComponent } from './component/gamelist/gamelist.component';
-
+import { ContactlistComponent } from './component/contactlist/contactlist.component';
 
 
 
@@ -41,6 +41,7 @@ const routes: Routes = [
   {path: 'languagelist', component:LanguagelistComponent},
   {path: 'countrylist', component:CountrylistComponent},
   {path: 'gamelist', component:GamelistComponent},
+  {path: 'contactlist', component:ContactlistComponent},
 
 
 

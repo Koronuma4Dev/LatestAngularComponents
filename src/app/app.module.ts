@@ -22,6 +22,7 @@ import { ToollistComponent } from './component/toollist/toollist.component';
 import { LanguagelistComponent } from './component/languagelist/languagelist.component';
 import { CountrylistComponent } from './component/countrylist/countrylist.component';
 import { GamelistComponent } from './component/gamelist/gamelist.component';
+import { ContactlistComponent } from './component/contactlist/contactlist.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { GamelistComponent } from './component/gamelist/gamelist.component';
       LanguagelistComponent,
       CountrylistComponent,
       GamelistComponent,
+      ContactlistComponent,
 
   ],
   imports: [

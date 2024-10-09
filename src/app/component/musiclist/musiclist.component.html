@@ -1,0 +1,14 @@
+<h2>Add a music to your daily playlist</h2>
+
+<div class="Input-container">
+    <input type="text" #musicInput placeholder="Add a new music">
+    <button (click)="addMusic(musicInput)">Add to your music lsit</button>
+</div>
+
+<ul>
+    <li *ngFor="let music of musiclist; let i = index">
+        {{ music }}
+
+        <button (click)="removeMusic">Delete</button>
+    </li>
+</ul>

@@ -11,7 +11,7 @@ import { MovielistComponent } from './component/movielist/movielist.component';
 import { ProductlistComponent } from './component/productlist/productlist.component';
 import { CarlistComponent } from './component/carlist/carlist.component';
 import { SubjectlistComponent } from './component/subjectlist/subjectlist.component';
-
+import { SportlistComponent } from './component/sportlist/sportlist.component';
 
 const routes: Routes = [
   {path: '', component: NavigateComponent},
@@ -24,7 +24,10 @@ const routes: Routes = [
   {path: 'movielist', component:MovielistComponent},
   {path: 'productlist', component:ProductlistComponent},
   {path: 'carlist', component:CarlistComponent},
-  {path: 'subjectlist', component:SubjectlistComponent}
+  {path: 'subjectlist', component:SubjectlistComponent},
+  {path: 'sportlist', component:SportlistComponent},
+
+
 
 
 

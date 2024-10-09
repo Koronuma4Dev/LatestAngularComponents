@@ -15,6 +15,7 @@ import { MovielistComponent } from './component/movielist/movielist.component';
 import { ProductlistComponent } from './component/productlist/productlist.component';
 import { CarlistComponent } from './component/carlist/carlist.component';
 import { SubjectlistComponent } from './component/subjectlist/subjectlist.component';
+import { SportlistComponent } from './component/sportlist/sportlist.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SubjectlistComponent } from './component/subjectlist/subjectlist.compon
 
     ProductlistComponent,
       CarlistComponent,
-      SubjectlistComponent
+      SubjectlistComponent,
+      SportlistComponent
   ],
   imports: [
     BrowserModule,

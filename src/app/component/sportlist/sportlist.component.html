@@ -1,0 +1,15 @@
+<h1>List of the popular sport in the Philippines</h1>
+
+<div class="Input-container">
+    <input type="text" #sportInput placeholder="Add a list your favorite sports">
+    <button (click)="addSport(sportInput)">Add sport</button>
+</div>
+
+<ul>
+    <li *ngFor="let sport of sportlist; let i= index">  
+        {{ sport }}
+        
+      
+          <button (click)="removeSport(i)">remove</button>
+        </li>
+</ul>

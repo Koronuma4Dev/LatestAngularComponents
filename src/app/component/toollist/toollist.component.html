@@ -1,0 +1,17 @@
+
+<h1>List of tools available in my Hardware</h1>
+
+<div class="Input-container">
+    <input type="text" #toolInput placeholder="Add a new item">
+
+    <button (click)="addTool(toolInput)">Add item</button>
+</div>
+
+<ul>
+    <li *ngFor="let tool of toollist; let i = index">
+        {{ tool }}
+
+        <button (click)="removeTool(i)">Remove item</button>
+
+    </li>
+</ul>

@@ -1,0 +1,18 @@
+<div>
+    <h2>Grocery List for the day</h2>
+  
+    <input type="text" #nameInput placeholder="Enter item name">
+    <input type="number" #priceInput placeholder="Enter price">
+    <input type="date" #expirationInput placeholder="Enter expiration date">
+
+    <button (click)="addItem(nameInput.value, priceInput.value, expirationInput.value)">Add Item</button>
+  
+
+    <ul>
+      <li *ngFor="let item of groceryList; let i = index">
+        {{ item.name }} - ₱{{ item.price }} (Expires: {{ item.expiration }})
+        <button (click)="removeItem(i)">Remove</button>
+      </li>
+    </ul>
+  </div>
+  

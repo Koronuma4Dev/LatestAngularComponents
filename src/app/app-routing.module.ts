@@ -21,7 +21,7 @@ import { GamelistComponent } from './component/gamelist/gamelist.component';
 import { ContactlistComponent } from './component/contactlist/contactlist.component';
 import { FoodmenulistComponent } from './component/foodmenulist/foodmenulist.component';
 import { MusiclistComponent } from './component/musiclist/musiclist.component';
-
+import { GrocerylistComponent } from './component/grocerylist/grocerylist.component';
 
 
 
@@ -48,6 +48,7 @@ const routes: Routes = [
   {path: 'contactlist', component:ContactlistComponent},
   {path: 'foodmenulist', component:FoodmenulistComponent},
   {path: 'musiclist', component:MusiclistComponent},
+  {path: 'grocerylist', component:GrocerylistComponent},
 
 
 

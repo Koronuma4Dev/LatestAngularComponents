@@ -25,6 +25,7 @@ import { GamelistComponent } from './component/gamelist/gamelist.component';
 import { ContactlistComponent } from './component/contactlist/contactlist.component';
 import { FoodmenulistComponent } from './component/foodmenulist/foodmenulist.component';
 import { MusiclistComponent } from './component/musiclist/musiclist.component';
+import { GrocerylistComponent } from './component/grocerylist/grocerylist.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { MusiclistComponent } from './component/musiclist/musiclist.component';
       ContactlistComponent,
       FoodmenulistComponent,
       MusiclistComponent,
+      GrocerylistComponent,
 
   ],
   imports: [

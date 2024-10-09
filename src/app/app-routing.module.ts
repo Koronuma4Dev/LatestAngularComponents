@@ -13,7 +13,7 @@ import { CarlistComponent } from './component/carlist/carlist.component';
 import { SubjectlistComponent } from './component/subjectlist/subjectlist.component';
 import { SportlistComponent } from './component/sportlist/sportlist.component';
 import { VegetableslistComponent } from './component/vegetableslist/vegetableslist.component';
-
+import { AnimallistComponent } from './component/animallist/animallist.component';
 
 
 
@@ -32,6 +32,7 @@ const routes: Routes = [
   {path: 'subjectlist', component:SubjectlistComponent},
   {path: 'sportlist', component:SportlistComponent},
   {path: 'vegetableslist', component:VegetableslistComponent},
+  {path: 'animallist', component:AnimallistComponent},
 
 
 

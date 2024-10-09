@@ -1,0 +1,21 @@
+<h3>Zoo Animal List</h3>
+
+<h4>Add Animal</h4>
+<input #animalName placeholder="Dog" />
+<input #animalSize placeholder="5 kilogram" />
+<input #animalBreed placeholder="Aspin " />
+<input #animalHabitat placeholder="Land" />
+<button (click)="addAnimal(animalName, animalSize, animalBreed, animalHabitat); 
+               animalName.value=''; animalSize.value=''; animalBreed.value=''; animalHabitat.value=''">
+  Add Animal
+</button>
+
+<ul>
+  <li *ngFor="let animal of animals">
+    <h3>{{ animal.name }}</h3>
+    <p>Size: {{ animal.size }}</p>
+    <p>Breed: {{ animal.breed }}</p>
+    <p>Habitat: {{ animal.habitat }}</p>
+    <button (click)="removeAnimal(animal.id)">Remove</button>
+  </li>
+</ul>

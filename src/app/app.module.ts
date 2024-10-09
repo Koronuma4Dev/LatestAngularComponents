@@ -17,6 +17,7 @@ import { CarlistComponent } from './component/carlist/carlist.component';
 import { SubjectlistComponent } from './component/subjectlist/subjectlist.component';
 import { SportlistComponent } from './component/sportlist/sportlist.component';
 import { VegetableslistComponent } from './component/vegetableslist/vegetableslist.component';
+import { AnimallistComponent } from './component/animallist/animallist.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { VegetableslistComponent } from './component/vegetableslist/vegetablesli
       CarlistComponent,
       SubjectlistComponent,
       SportlistComponent,
-      VegetableslistComponent
+      VegetableslistComponent,
+      AnimallistComponent
   ],
   imports: [
     BrowserModule,

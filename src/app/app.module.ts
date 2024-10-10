@@ -33,6 +33,8 @@ import { DestinantionlistComponent } from './component/destinantionlist/destinan
 
 import { FlowerlistComponent } from './component/flowerlist/flowerlist.component';
 import { SoftwarelsitComponent } from './component/softwarelsit/softwarelsit.component';
+import { LoptoplistComponent } from './component/loptoplist/loptoplist.component';
+import { LaptopspecificationComponent } from './component/laptopspecification/laptopspecification.component';
 
 
 
@@ -70,6 +72,8 @@ import { SoftwarelsitComponent } from './component/softwarelsit/softwarelsit.com
     
       FlowerlistComponent,
             SoftwarelsitComponent,
+            LoptoplistComponent,
+            LaptopspecificationComponent,
    
 
   ],

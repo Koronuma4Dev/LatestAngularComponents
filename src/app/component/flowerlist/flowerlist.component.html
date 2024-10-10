@@ -1,22 +1,19 @@
 
-<div>
-    <h1>Flower List</h1>
+
+    <h1>Flower List for this DAY </h1>
   
-    <input 
-      type="text" 
-      placeholder="Enter flower name" 
-      [value]="flowerName" 
-      (input)="flowerName = $event.target.value" 
-    />
-    
-    <button (click)="addFlower()" [disabled]="!flowerName">Add Flower</button>
-    
-    <ul>
-      <li *ngFor="let flower of flowers">
-        {{ flower.name }} 
-        <button (click)="removeFlower(flower)">Remove</button>
-      </li>
-    </ul>
-  </div>
-  
-  
+ <div class="Input-container">
+  <input type="text" #flowerInput placeholder="Add a new flower for this event">
+
+  <button (click)="addFlower(flowerInput)">Add a new item</button>
+ </div>
+
+ <ul>
+  <li *ngFor="let flower of flowerlist; let i = index">
+  {{ flower }}
+
+  <button (click)="removeFlower(i)">Remove this item</button>
+  </li>
+
+
+ </ul>

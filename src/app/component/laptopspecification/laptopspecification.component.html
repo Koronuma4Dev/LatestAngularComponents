@@ -1,0 +1,21 @@
+<div class="laptop-list">
+    <h2>Laptop List</h2>
+    <button (click)="addLaptop()">Add Laptop</button>
+  
+    <ul>
+      <li *ngFor="let laptop of laptops; let i = index">
+        <div>
+          <label for="brand-{{ i }}">Brand:</label>
+          <input type="text" id="brand-{{ i }}" [(ngModel)]="laptop.brand">
+        </div>
+        <div>
+          <label for="model-{{ i }}">Model:</label>
+          <input type="text" id="model-{{ i }}" [(ngModel)]="laptop.model">
+        </div>
+        <div>
+          <label for="price-{{ i }}">Price:</label>
+          <input type="number" id="price-{{ i }}" [(ngModel)]="laptop.price">
+        </div>
+        <div>
+          <label for="ram-{{ i }}">RAM:</label>
+          <input type="text" id="ram-{{ i }}" [(ngModel)]

@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-interface Flower {
-  name: string;
-}
 
 @Component({
   selector: 'app-flowerlist',
@@ -10,20 +7,19 @@ interface Flower {
   styleUrl: './flowerlist.component.css'
 })
 export class FlowerlistComponent {
-  flowers: Flower[] = []; 
-  flowerName: string = ''; 
 
-  addFlower() {
-    if (this.flowerName.trim()) {
-      const newFlower: Flower = { name: this.flowerName.trim() };
-      this.flowers.push(newFlower);
-      this.flowerName = ''; }
-  }
+  flowerlist: string[]=['Tulips', 'Rose', 'Daisy', 'Sunflower'];
 
-  removeFlower(flower: Flower) {
-    const index = this.flowers.indexOf(flower);
-    if (index !== -1) {
-      this.flowers.splice(index, 1);
+  addFlower(flowerInput: HTMLInputElement){
+    const flower = flowerInput.value.trim();
+
+    if (flower){
+      this.flowerlist.push(flower);
+      flowerInput.value='';
+
     }
   }
+removeFlower(index: number){
+  this.flowerlist.splice(index, 1);
+}
 }

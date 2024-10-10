@@ -1,0 +1,12 @@
+<div>
+    <h2>Installed Software</h2>
+    <ul>
+      <li *ngFor="let software of installedSoftware">
+        {{ software }}
+        <button (click)="removeSoftware(software)">Remove</button>
+      </li>
+    </ul>
+    <input type="text" #newSoftware placeholder="Add new software" />
+    <button (click)="addSoftware(newSoftware.value); newSoftware.value=''">Add</button>
+  </div>
+  

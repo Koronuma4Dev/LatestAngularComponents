@@ -32,6 +32,7 @@ import { StationarylistComponent } from './component/stationarylist/stationaryli
 import { DestinantionlistComponent } from './component/destinantionlist/destinantionlist.component';
 
 import { FlowerlistComponent } from './component/flowerlist/flowerlist.component';
+import { SoftwarelsitComponent } from './component/softwarelsit/softwarelsit.component';
 
 
 
@@ -68,6 +69,7 @@ import { FlowerlistComponent } from './component/flowerlist/flowerlist.component
       DestinantionlistComponent,
     
       FlowerlistComponent,
+            SoftwarelsitComponent,
    
 
   ],

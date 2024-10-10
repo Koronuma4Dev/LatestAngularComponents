@@ -28,7 +28,7 @@ import { LecturelistComponent } from './component/lecturelist/lecturelist.compon
 import { StationarylistComponent } from './component/stationarylist/stationarylist.component';
 import { DestinantionlistComponent } from './component/destinantionlist/destinantionlist.component';
 import { FlowerlistComponent } from './component/flowerlist/flowerlist.component';
-
+import { SoftwarelsitComponent } from './component/softwarelsit/softwarelsit.component';
 
 
 
@@ -61,6 +61,7 @@ const routes: Routes = [
   {path: 'stationarylist', component:StationarylistComponent},
   {path: 'destinantionlist', component:DestinantionlistComponent},
   {path: 'flowerlist', component:FlowerlistComponent},
+  {path: 'softwarelsit', component:SoftwarelsitComponent},
 
  
 

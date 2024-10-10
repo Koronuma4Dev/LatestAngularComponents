@@ -1,0 +1,25 @@
+<div>
+    <h2>Computer Hardware List</h2>
+    
+    <label for="hardwareInput">Add Hardware:</label>
+    <input id="hardwareInput" type="text" #hardwareInput />
+    <button (click)="addHardware(hardwareInput.value)">Add</button>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Hardware</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hardware of hardwareList; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ hardware }}</td>
+          <td><button (click)="removeHardware(i)">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

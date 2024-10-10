@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-interface CarModel {
-  id: number;
-  name: string;
-  year: number;
-}
+
 
 @Component({
   selector: 'app-carlist',
@@ -11,19 +7,16 @@ interface CarModel {
   styleUrl: './carlist.component.css'
 })
 export class CarlistComponent {
+  carModelList: string[] = ['Toyota Camry', 'Honda Accord', 'Tesla Model 3', 'Jimny Suzuki' ,'Honda civic seadan'];
 
-  carModels: CarModel[] = [];
-
-  addCarModel(carModelName: HTMLInputElement, carModelYear: HTMLInputElement) {
-    const newCarModel: CarModel = {
-      id: this.carModels.length + 1,
-      name: carModelName.value,
-      year: +carModelYear.value
-    };
-    this.carModels.push(newCarModel);
+  addCarModel(carModel: string) {
+    if (carModel.trim()) {
+      this.carModelList.push(carModel);
+    }
   }
 
-  removeCarModel(carModelId: number) {
-    this.carModels = this.carModels.filter(carModel => carModel.id !== carModelId);
+  removeCarModel(index: number) {
+    this.carModelList.splice(index, 1);
   }
+ 
 }

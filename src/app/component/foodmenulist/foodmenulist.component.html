@@ -1,11 +1,16 @@
 <h2>Food menu available for this day</h2>
-<div class="food-menu">
-    <h2>Food Menu</h2>
-    <ul>
-      <li *ngFor="let item of menuItems">
-        {{ item.name }} - ₱{{ item.price }}
-        <button (click)="removeItem(item)">Remove</button>
-      </li>
-    </ul>
-    <button (click)="addItem()">Add Item</button>
-  </div>
+<div class="Input-container">
+  <input type="text" #foodmenuInput placeholder="Add a new menu on the list">
+
+  <button (click)="addFoodmenu(foodmenuInput)">Add menu</button>
+</div>
+
+<ul>
+  <li *ngFor="let foodmenu of foodmenulist; let i = index">
+
+    {{ foodmenu }}
+
+    <button (click)="removeFoodmenu(i)">Delete</button>
+
+  </li>
+</ul>

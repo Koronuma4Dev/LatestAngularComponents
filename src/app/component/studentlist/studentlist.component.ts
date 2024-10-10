@@ -6,15 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './studentlist.component.css'
 })
 export class StudentlistComponent {
-  studentlist: Array<{ name: string; section: string; course: string }> = [];
+  studentList: string[] = ['Alice ', 'Cassie', 'Wesly'];
 
-  addStudent(name: string, section: string, course: string) {
-    if (name && section && course) {
-      this.studentlist.push({ name, section, course });
+  addStudent(student: string) {
+    if (student.trim()) {
+      this.studentList.push(student);
     }
   }
-  
+
   removeStudent(index: number) {
-    this.studentlist.splice(index, 1);
+    this.studentList.splice(index, 1);
   }
 }

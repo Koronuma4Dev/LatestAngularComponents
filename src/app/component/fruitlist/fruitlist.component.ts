@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './fruitlist.component.css'
 })
 export class FruitlistComponent {
-  Fruitlist: string[] = [];
+  Fruitlist: string[] = ['Apple', 'Banana', "Cherry", 'Watermelon'];
 
   addfruitlist(fruit: string) {
     if (fruit) {

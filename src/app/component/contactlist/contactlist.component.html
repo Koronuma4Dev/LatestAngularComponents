@@ -1,18 +1,11 @@
 <div>
-    <h2>Phone Contact List</h2>
-  
-
-    <input type="text" #nameInput placeholder="Enter name">
-    <input type="text" #contactInput placeholder="Enter contact number">
-    <input type="text" #relatedInput placeholder="Enter related person">
-  
-    <button (click)="addContact(nameInput.value, contactInput.value, relatedInput.value)">Add Contact</button>
-
-    <ul>
-      <li *ngFor="let contact of contacts; let i = index">
-        {{ contact.name }} - {{ contact.phone }} ({{ contact.related }})
-        <button (click)="removeContact(i)">Remove</button>
-      </li>
-    </ul>
-  </div>
-  
+  <h2>Contact List</h2>
+  <ul>
+    <li *ngFor="let contact of contacts">
+      {{ contact }}
+      <button (click)="removeContact(contact)">Remove</button>
+    </li>
+  </ul>
+  <input type="text" #newContact placeholder="Add new contact" />
+  <button (click)="addContact(newContact.value); newContact.value=''">Add</button>
+</div>

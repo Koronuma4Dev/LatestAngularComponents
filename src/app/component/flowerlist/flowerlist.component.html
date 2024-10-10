@@ -1,0 +1,22 @@
+
+<div>
+    <h1>Flower List</h1>
+  
+    <input 
+      type="text" 
+      placeholder="Enter flower name" 
+      [value]="flowerName" 
+      (input)="flowerName = $event.target.value" 
+    />
+    
+    <button (click)="addFlower()" [disabled]="!flowerName">Add Flower</button>
+    
+    <ul>
+      <li *ngFor="let flower of flowers">
+        {{ flower.name }} 
+        <button (click)="removeFlower(flower)">Remove</button>
+      </li>
+    </ul>
+  </div>
+  
+  

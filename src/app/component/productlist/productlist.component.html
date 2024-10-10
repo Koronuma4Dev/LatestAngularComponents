@@ -1,16 +1,13 @@
-<h2>Product List</h2>
+<div>
+  <h3>Product List</h3>
+  <input #productInput placeholder="Add new product" />  <!-- Input for new product -->
+  <button (click)="addProduct(productInput)">Add Product</button>
 
-
-<h3>Add Product</h3>
-<input #productName placeholder="Product Name" />
-<input #productPrice type="number" placeholder="Product Price" />
-<button (click)="addProduct(productName, productPrice); productName.value=''; productPrice.value=''">Add Product</button>
-
-<ul>
-  <li *ngFor="let product of products">
-    <h3>{{ product.name }}</h3>
-    <p>Price:₱{{ product.price }}</p>
-    <button (click)="removeProduct(product.id)">Remove</button>
-  </li>
-</ul>
+  <ul>
+    <li *ngFor="let product of productlist; let i = index">
+      {{ product }}
+      <button (click)="removeProduct(i)">Remove</button>  <!-- Remove product -->
+    </li>
+  </ul>
+</div>
 

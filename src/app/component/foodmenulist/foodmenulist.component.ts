@@ -9,23 +9,25 @@ import { Component } from '@angular/core';
   styleUrl: './foodmenulist.component.css'
 })
 export class FoodmenulistComponent {
-  menuItems = [
-    { name: 'Chicken Adobo with rice', price: 70 },
-    { name: 'Pesto pasta', price: 100 },
-    { name: 'Tuna sandwhich', price: 30 },
-    { name: 'Water bottle', price: 15 },
+  foodmenulist:string[] = [
+    'Chicken Adobo with rice',
+    'Pesto pasta',
+   'Tuna sandwhich',
+    'Water bottle'
 
-  ];
+ ];
 
-  removeItem(item: any) {
-    const index = this.menuItems.indexOf(item);
-    if (index !== -1) {
-      this.menuItems.splice(index, 1);
-    }
-  }
+ addFoodmenu(foodmenuInput: HTMLInputElement){
+   const foodmenu= foodmenuInput.value.trim();
 
-  addItem() {
-    const newItem = { name: 'New Item', price: 9.99 };
-    this.menuItems.push(newItem);
-  }
+   if(foodmenu){
+     this.foodmenulist.push(foodmenu);
+       foodmenuInput.value='';
+     
+   }
+ }
+ removeFoodmenu(index: number){
+   this.foodmenulist.splice(index, 1);
+ }
+ 
 }

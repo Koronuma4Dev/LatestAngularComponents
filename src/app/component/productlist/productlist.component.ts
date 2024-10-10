@@ -12,19 +12,20 @@ interface Product {
   styleUrl: './productlist.component.css'
 })
 export class ProductlistComponent {
-  
-  products: Product[] = [];
+  productlist: string[] = ['Bread', 'Milk', 'Coffee', 'Canned goods','Beans', 'Cereal'];
 
-  addProduct(productName: HTMLInputElement, productPrice: HTMLInputElement) {
-    const newProduct: Product = {
-      id: this.products.length + 1,
-      name: productName.value,
-      price: +productPrice.value
-    };
-    this.products.push(newProduct);
+
+
+  
+  addProduct(productInput: HTMLInputElement) {
+    const product = productInput.value.trim();
+    if (product) {
+      this.productlist.push(product);
+      productInput.value= '';  
+    }
   }
 
-  removeProduct(productId: number) {
-    this.products = this.products.filter(product => product.id !== productId);
+  removeProduct(index: number) {
+    this.productlist.splice(index, 1); 
   }
 }

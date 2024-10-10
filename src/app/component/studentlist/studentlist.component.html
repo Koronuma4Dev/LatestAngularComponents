@@ -1,34 +1,26 @@
-<main>
-
-    <h1 class="heading">Student-list</h1>
-    <div class="input-container">
-        <input type="text" #studentName placeholder="Name">
-        <input type="text" #studentSection placeholder="Section">
-        <input type="text" #studentCourse placeholder="Course">
-        <button (click)="addStudent(studentName.value, studentSection.value, studentCourse.value)">Add student</button>
-      </div>
-      
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Section</th>
-            <th>Course</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let student of studentlist; let i = index">
-            <td>{{ student.name }}</td>
-            <td>{{ student.section }}</td>
-            <td>{{ student.course }}</td>
-            <td>  <button (click)="removeStudent(i)">Remove</button></td>
-          
-          </tr>
-        </tbody>
-      </table>
-      
-
-
-</main>
-
+<div class="container">
+  <h1>Student List</h1>
+  <input #studentName placeholder="Enter student name">
+  <button (click)="addStudent(studentName.value); studentName.value=''">
+    Add Student to the List
+  </button>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Student Name</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of studentList; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ student }}</td>
+        <td>
+          <button (click)="removeStudent(i)">Remove</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

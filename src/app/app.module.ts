@@ -11,7 +11,6 @@ import { CourselistComponent } from './component/courselist/courselist.component
 import { BooklistComponent } from './component/booklist/booklist.component';
 import { CitylistComponent } from './component/citylist/citylist.component';
 import { MovielistComponent } from './component/movielist/movielist.component';
-
 import { ProductlistComponent } from './component/productlist/productlist.component';
 import { CarlistComponent } from './component/carlist/carlist.component';
 import { SubjectlistComponent } from './component/subjectlist/subjectlist.component';
@@ -32,13 +31,14 @@ import { LecturelistComponent } from './component/lecturelist/lecturelist.compon
 import { StationarylistComponent } from './component/stationarylist/stationarylist.component';
 import { DestinantionlistComponent } from './component/destinantionlist/destinantionlist.component';
 
+import { FlowerlistComponent } from './component/flowerlist/flowerlist.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigateComponent,
- 
     StudentlistComponent,
     FruitlistComponent,
     EmployeelistComponent,
@@ -66,6 +66,8 @@ import { DestinantionlistComponent } from './component/destinantionlist/destinan
       LecturelistComponent,
       StationarylistComponent,
       DestinantionlistComponent,
+    
+      FlowerlistComponent,
    
 
   ],

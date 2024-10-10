@@ -13,19 +13,24 @@ interface Vegetable {
   styleUrl: './vegetableslist.component.css'
 })
 export class VegetableslistComponent {
-  vegetables: Vegetable[] = [];
+  vegetables: string[] = ['Tomato', 'Carrot', 'Broccoli'];
 
-  addVegetable(vegetableName: HTMLInputElement, vegetableQuantity: HTMLInputElement, vegetablePrice: HTMLInputElement) {
-    const newVegetable: Vegetable = {
-      id: this.vegetables.length + 1,
-      name: vegetableName.value,
-      quantity: +vegetableQuantity.value,
-      price: +vegetablePrice.value
-    };
-    this.vegetables.push(newVegetable);
+  newVegetable: string = '';
+
+
+  addVegetable() {
+    if (this.newVegetable.trim()) {
+      this.vegetables.push(this.newVegetable);
+      this.newVegetable = '';  
+    }
   }
 
-  removeVegetable(vegetableId: number) {
-    this.vegetables = this.vegetables.filter(vegetable => vegetable.id !== vegetableId);
+  removeVegetable(index: number) {
+    this.vegetables.splice(index, 1); 
+  }
+
+  onInputChange(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    this.newVegetable = inputElement.value;
   }
 }

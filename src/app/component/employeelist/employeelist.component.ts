@@ -6,15 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './employeelist.component.css'
 })
 export class EmployeelistComponent {
-  employees: string[] = [];
+  employeeList: string[] = ['John Doe', 'Jane Smith', 'Emily Davis'];
 
-  addEmployee(employeeName: string): void {
-      if (employeeName.trim()) {
-          this.employees.push(employeeName.trim());
-      }
+  addEmployee(employee: string) {
+    if (employee.trim()) {
+      this.employeeList.push(employee);
+    }
   }
 
-  removeEmployee(index: number): void {
-      this.employees.splice(index, 1);
+  removeEmployee(index: number) {
+    this.employeeList.splice(index, 1);
   }
 }

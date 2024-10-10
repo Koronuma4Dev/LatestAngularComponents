@@ -1,12 +1,26 @@
-<h3>Add Car Model</h3>
-<input #carModelName placeholder="Car Model Name" />
-<input #carModelYear type="number" placeholder="Car Model Year" />
-<button (click)="addCarModel(carModelName, carModelYear); carModelName.value=''; carModelYear.value=''">Add Car Model</button>
+<div class="container">
+  <h1>Car Model List</h1>
+  <input #carModel placeholder="Enter car model">
+  <button (click)="addCarModel(carModel.value); carModel.value=''">
+    Add Car Model
+  </button>
 
-<ul>
-  <li *ngFor="let carModel of carModels">
-    <h3>{{ carModel.name }}</h3>
-    <p>Year: {{ carModel.year }}</p>
-    <button (click)="removeCarModel(carModel.id)">Remove</button>
-  </li>
-</ul>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Car Model</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let model of carModelList; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ model }}</td>
+        <td>
+          <button (click)="removeCarModel(i)">Remove</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

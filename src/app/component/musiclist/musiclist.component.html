@@ -9,6 +9,6 @@
     <li *ngFor="let music of musiclist; let i = index">
         {{ music }}
 
-        <button (click)="removeMusic">Delete</button>
+        <button (click)="removeMusic(i)">Delete</button>
     </li>
 </ul>

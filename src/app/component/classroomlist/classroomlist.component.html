@@ -10,6 +10,6 @@
     <li *ngFor="let classroom of classroomlist; let i = index">
    {{ classroom }}
 
-   <button (click)="removeClassroom">Delete</button>
+   <button (click)="removeClassroom(i)">Delete</button>
     </li>
 </ul>

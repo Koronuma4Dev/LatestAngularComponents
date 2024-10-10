@@ -6,15 +6,19 @@ import { Component } from '@angular/core';
   styleUrl: './contactlist.component.css'
 })
 export class ContactlistComponent {
-  contacts: { name: string, phone: string, related: string }[] = [];
+  contacts: string[] = [
+    'John Doe',
+    'Jane Smith',
+    'Alice Johnson'
+  ];
 
-  addContact(name: string, phone: string, related: string) {
-    if (name && phone && related) { 
-      this.contacts.push({ name, phone, related });
+  addContact(newContact: string) {
+    if (newContact) {
+      this.contacts.push(newContact);
     }
   }
 
-  removeContact(index: number) {
-    this.contacts.splice(index, 1);
+  removeContact(contact: string) {
+    this.contacts = this.contacts.filter(item => item !== contact);
   }
 }

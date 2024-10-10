@@ -1,19 +1,14 @@
 <h3>Ballerina Farm Store - Vegetables List</h3>
 
-<h4>Add Vegetable</h4>
-<input #vegetableName placeholder="Vegetable Name" />
-<input #vegetableQuantity type="number" placeholder="Quantity" />
-<input #vegetablePrice type="number" placeholder="Price per unit" />
-<button (click)="addVegetable(vegetableName, vegetableQuantity, vegetablePrice); 
-               vegetableName.value=''; vegetableQuantity.value=''; vegetablePrice.value=''">
-  Add Vegetable
-</button>
+<div>
+  <h3>Vegetable List</h3>
+  <input [value]="newVegetable" (input)="onInputChange($event)" placeholder="Add new vegetable" />
+  <button (click)="addVegetable()">Add Vegetable</button>
 
-<ul>
-  <li *ngFor="let vegetable of vegetables">
-    <h3>{{ vegetable.name }}</h3>
-    <p>Quantity: {{ vegetable.quantity }}</p>
-    <p>Price per unit: ₱{{ vegetable.price }}</p>
-    <button (click)="removeVegetable(vegetable.id)">Remove</button>
-  </li>
-</ul>
+  <ul>
+    <li *ngFor="let vegetable of vegetables; let i = index">
+      {{ vegetable }}
+      <button (click)="removeVegetable(i)">Remove</button>
+    </li>
+  </ul>
+</div>

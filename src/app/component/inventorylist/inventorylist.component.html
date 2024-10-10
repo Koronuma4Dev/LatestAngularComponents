@@ -7,9 +7,10 @@
 </div>
 
 <ul>
-    <li *ngFor="let inventory of inventorylist; let i -index">
+    <li *ngFor="let inventory of inventorylist; let i = index">
           {{ inventory }}
 
-          <button (click)="removeInventory">Delete</button>
+          <button (click)="removeInventory(i)">Delete</button>
+
     </li>
 </ul>

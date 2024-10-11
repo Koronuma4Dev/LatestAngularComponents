@@ -41,6 +41,7 @@ import { MobilelistComponent } from './component/mobilelist/mobilelist.component
 import { TVshowComponent } from './component/tvshow/tvshow.component';
 import { VideolistComponent } from './component/videolist/videolist.component';
 import { FurniturelistComponent } from './component/furniturelist/furniturelist.component';
+import { AccessoryListComponent } from './component/accessorylist/accessorylist.component';
 
 
 @NgModule({
@@ -78,13 +79,14 @@ import { FurniturelistComponent } from './component/furniturelist/furniturelist.
       FlowerlistComponent,
             SoftwarelsitComponent,
             LoptoplistComponent,
-
+           AccessoryListComponent,
             ComputerhardwareComponent,
               SpecificationlistComponent,
               MobilelistComponent,
               TVshowComponent,
               VideolistComponent,
               FurniturelistComponent,
+             
    
    
 

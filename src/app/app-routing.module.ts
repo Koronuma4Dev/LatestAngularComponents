@@ -33,6 +33,7 @@ import { LoptoplistComponent } from './component/loptoplist/loptoplist.component
 import { SpecificationlistComponent } from './component/specificationlist/specificationlist.component';
 import { ComputerhardwareComponent } from './component/computerhardware/computerhardware.component';
 import { MobilelistComponent } from './component/mobilelist/mobilelist.component';
+import { TVshowComponent } from './component/tvshow/tvshow.component';
 
 
 const routes: Routes = [
@@ -69,7 +70,7 @@ const routes: Routes = [
   {path: 'specificationlist', component:SpecificationlistComponent},
   {path: 'mobilelist', component:MobilelistComponent},
   {path: 'computerhardware', component:ComputerhardwareComponent},
-
+  {path: 'tvshow', component:TVshowComponent},
 
 
 

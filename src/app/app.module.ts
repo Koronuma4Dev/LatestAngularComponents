@@ -42,6 +42,7 @@ import { TVshowComponent } from './component/tvshow/tvshow.component';
 import { VideolistComponent } from './component/videolist/videolist.component';
 import { FurniturelistComponent } from './component/furniturelist/furniturelist.component';
 import { BuildinglistComponent } from './component/buildinglist/buildinglist.component';
+import { PaintinglistComponent } from './component/paintinglist/paintinglist.component';
 
 
 @NgModule({
@@ -87,6 +88,7 @@ import { BuildinglistComponent } from './component/buildinglist/buildinglist.com
               VideolistComponent,
               FurniturelistComponent,
               BuildinglistComponent,
+              PaintinglistComponent,
              
    
    

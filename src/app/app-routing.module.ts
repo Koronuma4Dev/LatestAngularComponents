@@ -37,8 +37,7 @@ import { TVshowComponent } from './component/tvshow/tvshow.component';
 import { VideolistComponent } from './component/videolist/videolist.component';
 import { FurniturelistComponent } from './component/furniturelist/furniturelist.component';
 import { BuildinglistComponent } from './component/buildinglist/buildinglist.component';
-import { builtinModules } from 'module';
-
+import { PaintinglistComponent } from './component/paintinglist/paintinglist.component';
 
 const routes: Routes = [
   {path: '', component: NavigateComponent},
@@ -78,6 +77,7 @@ const routes: Routes = [
   {path: 'videolist', component:VideolistComponent},
   {path: 'furniturelist', component:FurniturelistComponent},
   {path: 'buildinglist', component:BuildinglistComponent},
+  {path: 'paintinglist', component:PaintinglistComponent},
   
 
 

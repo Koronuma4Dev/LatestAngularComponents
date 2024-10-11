@@ -36,7 +36,8 @@ import { MobilelistComponent } from './component/mobilelist/mobilelist.component
 import { TVshowComponent } from './component/tvshow/tvshow.component';
 import { VideolistComponent } from './component/videolist/videolist.component';
 import { FurniturelistComponent } from './component/furniturelist/furniturelist.component';
-import { AccessoryListComponent } from './component/accessorylist/accessorylist.component';
+import { BuildinglistComponent } from './component/buildinglist/buildinglist.component';
+import { builtinModules } from 'module';
 
 
 const routes: Routes = [
@@ -76,7 +77,8 @@ const routes: Routes = [
   {path: 'tvshow', component:TVshowComponent},
   {path: 'videolist', component:VideolistComponent},
   {path: 'furniturelist', component:FurniturelistComponent},
-  {path: 'accessorylist', component:AccessoryListComponent},
+  {path: 'buildinglist', component:BuildinglistComponent},
+  
 
 
 

@@ -30,7 +30,7 @@ import { DestinantionlistComponent } from './component/destinantionlist/destinan
 import { FlowerlistComponent } from './component/flowerlist/flowerlist.component';
 import { SoftwarelsitComponent } from './component/softwarelsit/softwarelsit.component';
 import { LoptoplistComponent } from './component/loptoplist/loptoplist.component';
-import { LaptopSpecsComponent } from './component/laptop-specs/laptop-specs.component';
+import { SpecificationlistComponent } from './component/specificationlist/specificationlist.component';
 import { ComputerhardwareComponent } from './component/computerhardware/computerhardware.component';
 
 
@@ -66,7 +66,7 @@ const routes: Routes = [
   {path: 'flowerlist', component:FlowerlistComponent},
   {path: 'softwarelsit', component:SoftwarelsitComponent},
   {path: 'loptoplist', component:LoptoplistComponent},
-  {path: 'laptop-specs', component:LaptopSpecsComponent},
+  {path: 'specificationlist', component:SpecificationlistComponent},
 
   {path: 'computerhardware', component:ComputerhardwareComponent},
 

@@ -36,6 +36,7 @@ import { SoftwarelsitComponent } from './component/softwarelsit/softwarelsit.com
 import { LoptoplistComponent } from './component/loptoplist/loptoplist.component';
 
 import { ComputerhardwareComponent } from './component/computerhardware/computerhardware.component';
+import { SpecificationlistComponent } from './component/specificationlist/specificationlist.component';
 
 
 @NgModule({
@@ -75,6 +76,7 @@ import { ComputerhardwareComponent } from './component/computerhardware/computer
             LoptoplistComponent,
 
             ComputerhardwareComponent,
+              SpecificationlistComponent,
    
    
 

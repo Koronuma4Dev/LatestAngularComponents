@@ -40,6 +40,7 @@ import { SpecificationlistComponent } from './component/specificationlist/specif
 import { MobilelistComponent } from './component/mobilelist/mobilelist.component';
 import { TVshowComponent } from './component/tvshow/tvshow.component';
 import { VideolistComponent } from './component/videolist/videolist.component';
+import { FurniturelistComponent } from './component/furniturelist/furniturelist.component';
 
 
 @NgModule({
@@ -83,6 +84,7 @@ import { VideolistComponent } from './component/videolist/videolist.component';
               MobilelistComponent,
               TVshowComponent,
               VideolistComponent,
+              FurniturelistComponent,
    
    
 

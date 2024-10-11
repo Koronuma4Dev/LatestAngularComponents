@@ -34,7 +34,7 @@ import { SpecificationlistComponent } from './component/specificationlist/specif
 import { ComputerhardwareComponent } from './component/computerhardware/computerhardware.component';
 import { MobilelistComponent } from './component/mobilelist/mobilelist.component';
 import { TVshowComponent } from './component/tvshow/tvshow.component';
-
+import { VideolistComponent } from './component/videolist/videolist.component';
 
 const routes: Routes = [
   {path: '', component: NavigateComponent},
@@ -71,6 +71,7 @@ const routes: Routes = [
   {path: 'mobilelist', component:MobilelistComponent},
   {path: 'computerhardware', component:ComputerhardwareComponent},
   {path: 'tvshow', component:TVshowComponent},
+  {path: 'videolist', component:VideolistComponent},
 
 
 

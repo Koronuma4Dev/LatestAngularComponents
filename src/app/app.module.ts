@@ -39,6 +39,7 @@ import { ComputerhardwareComponent } from './component/computerhardware/computer
 import { SpecificationlistComponent } from './component/specificationlist/specificationlist.component';
 import { MobilelistComponent } from './component/mobilelist/mobilelist.component';
 import { TVshowComponent } from './component/tvshow/tvshow.component';
+import { VideolistComponent } from './component/videolist/videolist.component';
 
 
 @NgModule({
@@ -81,6 +82,7 @@ import { TVshowComponent } from './component/tvshow/tvshow.component';
               SpecificationlistComponent,
               MobilelistComponent,
               TVshowComponent,
+              VideolistComponent,
    
    
 

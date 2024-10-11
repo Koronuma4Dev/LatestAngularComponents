@@ -46,6 +46,7 @@ import { PaintinglistComponent } from './component/paintinglist/paintinglist.com
 import { ArtistlistComponent } from './component/artistlist/artistlist.component';
 import { ComposerlistComponent } from './component/composerlist/composerlist.component';
 import { PodcastlistComponent } from './component/podcastlist/podcastlist.component';
+import { AccessorylistComponent } from './component/accessorylist/accessorylist.component';
 
 
 @NgModule({
@@ -95,6 +96,7 @@ import { PodcastlistComponent } from './component/podcastlist/podcastlist.compon
               ArtistlistComponent,
               ComposerlistComponent,
               PodcastlistComponent,
+              AccessorylistComponent,
              
    
    

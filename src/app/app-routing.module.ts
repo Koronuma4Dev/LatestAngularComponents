@@ -32,7 +32,7 @@ import { SoftwarelsitComponent } from './component/softwarelsit/softwarelsit.com
 import { LoptoplistComponent } from './component/loptoplist/loptoplist.component';
 import { SpecificationlistComponent } from './component/specificationlist/specificationlist.component';
 import { ComputerhardwareComponent } from './component/computerhardware/computerhardware.component';
-
+import { MobilelistComponent } from './component/mobilelist/mobilelist.component';
 
 
 const routes: Routes = [
@@ -67,7 +67,7 @@ const routes: Routes = [
   {path: 'softwarelsit', component:SoftwarelsitComponent},
   {path: 'loptoplist', component:LoptoplistComponent},
   {path: 'specificationlist', component:SpecificationlistComponent},
-
+  {path: 'mobilelist', component:MobilelistComponent},
   {path: 'computerhardware', component:ComputerhardwareComponent},
 
 

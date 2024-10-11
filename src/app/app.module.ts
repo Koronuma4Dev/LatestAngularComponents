@@ -34,9 +34,8 @@ import { DestinantionlistComponent } from './component/destinantionlist/destinan
 import { FlowerlistComponent } from './component/flowerlist/flowerlist.component';
 import { SoftwarelsitComponent } from './component/softwarelsit/softwarelsit.component';
 import { LoptoplistComponent } from './component/loptoplist/loptoplist.component';
-import { LaptopspecificationComponent } from './component/laptopspecification/laptopspecification.component';
-import { ComputerhardwareComponent } from './component/computerhardware/computerhardware.component';
 
+import { ComputerhardwareComponent } from './component/computerhardware/computerhardware.component';
 
 
 @NgModule({
@@ -74,8 +73,9 @@ import { ComputerhardwareComponent } from './component/computerhardware/computer
       FlowerlistComponent,
             SoftwarelsitComponent,
             LoptoplistComponent,
-            LaptopspecificationComponent,
+
             ComputerhardwareComponent,
+   
    
 
   ],

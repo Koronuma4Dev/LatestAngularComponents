@@ -1,0 +1,13 @@
+<h1>Laptop Specs</h1>
+
+<div class="input-container">
+  <input type="text" #specInput placeholder="Add a specification">
+  <button (click)="addSpec(specInput)">Add Spec</button>
+</div>
+
+<ul>
+  <li *ngFor="let spec of specList; let i = index">
+    {{ spec }}
+    <button (click)="removeSpec(i)">Remove</button>
+  </li>
+</ul>

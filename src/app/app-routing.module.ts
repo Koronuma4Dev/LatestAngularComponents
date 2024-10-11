@@ -40,6 +40,10 @@ import { BuildinglistComponent } from './component/buildinglist/buildinglist.com
 import { PaintinglistComponent } from './component/paintinglist/paintinglist.component';
 import { ArtistlistComponent } from './component/artistlist/artistlist.component';
 import { ComposerlistComponent } from './component/composerlist/composerlist.component';
+import { PodcastlistComponent } from './component/podcastlist/podcastlist.component';
+
+
+
 
 
 const routes: Routes = [
@@ -83,7 +87,7 @@ const routes: Routes = [
   {path: 'paintinglist', component:PaintinglistComponent},
   {path: 'artistlist', component:ArtistlistComponent},
   {path: 'composerlist', component:ComposerlistComponent},
-
+  {path: 'podcastlist', component:PodcastlistComponent},
   
 
 
